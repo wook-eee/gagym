@@ -1,0 +1,127 @@
+.trainer-list {
+  padding: 2rem 0;
+}
+
+.trainer-list .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.trainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.trainer-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.trainer-image {
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trainer-image i {
+  font-size: 3rem;
+  color: white;
+}
+
+.trainer-content {
+  padding: 1.5rem;
+}
+
+.trainer-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.trainer-gym {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.trainer-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trainer-specialization {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.trainer-experience {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.trainer-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.trainer-price {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.trainer-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.trainer-actions .btn {
+  flex: 1;
+}
+
+.specialization-filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.specialization-filter select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .trainer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trainer-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+} 

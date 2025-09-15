@@ -1,0 +1,91 @@
+2025-09-15 17:47:55 [main] INFO  com.gagym.GagymApplication - Starting GagymApplication using Java 24.0.1 with PID 14696 (C:\Users\TJ-BU-707-P01\Desktop\gagym\gagym\target\classes started by TJ-BU-707-P01 in C:\Users\TJ-BU-707-P01\Desktop\gagym)
+2025-09-15 17:47:55 [main] DEBUG com.gagym.GagymApplication - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-09-15 17:47:55 [main] INFO  com.gagym.GagymApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-15 17:47:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-15 17:47:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 262 ms. Found 12 JPA repository interfaces.
+2025-09-15 17:47:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-15 17:47:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-15 17:47:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-15 17:47:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-15 17:47:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-15 17:47:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4476 ms
+2025-09-15 17:48:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-15 17:48:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-15 17:48:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-15 17:48:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-15 17:48:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-15 17:48:01 [main] INFO  i.o.api.GlobalOpenTelemetry - AutoConfiguredOpenTelemetrySdk found on classpath but automatic configuration is disabled. To enable, run your JVM with -Dotel.java.global-autoconfigure.enabled=true
+2025-09-15 17:48:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254513e8
+2025-09-15 17:48:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-15 17:48:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-15 17:48:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-15 17:48:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-15 17:48:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-15 17:48:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-15 17:48:04 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-15 17:48:06 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-09-15 17:48:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-15 17:48:08 [main] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, OAuth2AuthorizationRequestRedirectFilter, OAuth2LoginAuthenticationFilter, DefaultResourcesFilter, DefaultLoginPageGeneratingFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-15 17:48:08 [main] INFO  org.springframework.web.SimpLogging - Starting...
+2025-09-15 17:48:08 [main] INFO  org.springframework.web.SimpLogging - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1b47915]]
+2025-09-15 17:48:08 [main] INFO  org.springframework.web.SimpLogging - Started.
+2025-09-15 17:48:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-15 17:48:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-15 17:48:08 [main] INFO  com.gagym.GagymApplication - Started GagymApplication in 14.306 seconds (process running for 15.72)
+2025-09-15 17:49:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-15 17:49:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-15 17:49:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-09-15 17:49:08 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/popular
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /favicon.ico
+2025-09-15 17:49:08 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/popular
+2025-09-15 17:49:08 [http-nio-8080-exec-1] INFO  com.gagym.controller.GymController - 🚀 인기 헬스장 조회 요청
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-09-15 17:49:08 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/nearby?latitude=37.4931456&longitude=126.7236864&radius=3000
+2025-09-15 17:49:08 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/nearby?latitude=37.4931456&longitude=126.7236864&radius=3000
+2025-09-15 17:49:08 [http-nio-8080-exec-3] INFO  com.gagym.controller.GymController - 📍 위치 기반 헬스장 조회: 위도=37.4931456, 경도=126.7236864, 반경=3000m
+2025-09-15 17:49:08 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [MessageBroker-1] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-09-15 17:49:08 [http-nio-8080-exec-3] INFO  com.gagym.controller.GymController - ✅ 10개의 가까운 헬스장 조회 완료
+2025-09-15 17:49:08 [http-nio-8080-exec-1] INFO  com.gagym.controller.GymController - ✅ 인기 헬스장 조회 완료: 10개
+2025-09-15 17:49:08 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/popular
+2025-09-15 17:49:08 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/nearby?latitude=37.4931456&longitude=126.7236864&radius=3000
+2025-09-15 17:49:08 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/popular
+2025-09-15 17:49:08 [http-nio-8080-exec-4] INFO  com.gagym.controller.GymController - 🚀 인기 헬스장 조회 요청
+2025-09-15 17:49:08 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:08 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/nearby?latitude=37.4931456&longitude=126.7236864&radius=3000
+2025-09-15 17:49:08 [http-nio-8080-exec-5] INFO  com.gagym.controller.GymController - 📍 위치 기반 헬스장 조회: 위도=37.4931456, 경도=126.7236864, 반경=3000m
+2025-09-15 17:49:08 [http-nio-8080-exec-4] INFO  com.gagym.controller.GymController - ✅ 인기 헬스장 조회 완료: 10개
+2025-09-15 17:49:08 [http-nio-8080-exec-5] INFO  com.gagym.controller.GymController - ✅ 10개의 가까운 헬스장 조회 완료
+2025-09-15 17:49:26 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/page?page=1&size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:26 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/page?page=1&size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-8] INFO  com.gagym.controller.GymController - 🚀 페이지네이션 헬스장 목록 조회 요청: page=1, size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-8] INFO  com.gagym.controller.GymController - ✅ 페이지네이션 헬스장 목록 조회 완료: page=1, size=18, total=383, hasNext=true
+2025-09-15 17:49:26 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/search/location?latitude=37.4931456&longitude=126.7236864&radius=5000
+2025-09-15 17:49:26 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/page?page=1&size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:26 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/search/location?latitude=37.4931456&longitude=126.7236864&radius=5000
+2025-09-15 17:49:26 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:26 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/page?page=1&size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-10] INFO  com.gagym.controller.GymController - 🚀 페이지네이션 헬스장 목록 조회 요청: page=1, size=18
+2025-09-15 17:49:26 [http-nio-8080-exec-9] INFO  com.gagym.controller.GymController - 🚀 위치 기반 헬스장 검색 요청: (37.4931456, 126.7236864), 반경 5000m
+2025-09-15 17:49:26 [http-nio-8080-exec-10] INFO  com.gagym.controller.GymController - ✅ 페이지네이션 헬스장 목록 조회 완료: page=1, size=18, total=383, hasNext=true
+2025-09-15 17:49:26 [http-nio-8080-exec-9] INFO  com.gagym.controller.GymController - ✅ 위치 기반 헬스장 검색 완료: 350개
+2025-09-15 17:49:26 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/gyms/search/location?latitude=37.4931456&longitude=126.7236864&radius=5000
+2025-09-15 17:49:26 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-15 17:49:26 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/gyms/search/location?latitude=37.4931456&longitude=126.7236864&radius=5000
+2025-09-15 17:49:26 [http-nio-8080-exec-2] INFO  com.gagym.controller.GymController - 🚀 위치 기반 헬스장 검색 요청: (37.4931456, 126.7236864), 반경 5000m
+2025-09-15 17:49:26 [http-nio-8080-exec-2] INFO  com.gagym.controller.GymController - ✅ 위치 기반 헬스장 검색 완료: 350개

@@ -1,0 +1,99 @@
+.oauth2-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.test-container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.test-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.test-container p {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.test-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.test-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.test-btn.google {
+  background: #4285f4;
+}
+
+.test-btn.google:hover {
+  background: #3367d6;
+  transform: translateY(-2px);
+}
+
+.test-btn.kakao {
+  background: #fee500;
+  color: #000;
+}
+
+.test-btn.kakao:hover {
+  background: #fdd835;
+  transform: translateY(-2px);
+}
+
+.test-btn.naver {
+  background: #03c75a;
+}
+
+.test-btn.naver:hover {
+  background: #02b351;
+  transform: translateY(-2px);
+}
+
+.test-info {
+  text-align: left;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.test-info h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.test-info ol {
+  color: #666;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.test-info li {
+  margin-bottom: 8px;
+} 
