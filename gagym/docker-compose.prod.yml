@@ -11,12 +11,9 @@ services:
       MYSQL_USER: gagym
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:-gagym1234}
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./mysql-utf8-setup.sql:/docker-entrypoint-initdb.d/01-setup.sql
-      - ./create_attendance_table.sql:/docker-entrypoint-initdb.d/02-attendance.sql
-      - ./create_inquiry_tables.sql:/docker-entrypoint-initdb.d/03-inquiry.sql
     restart: unless-stopped
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     healthcheck:

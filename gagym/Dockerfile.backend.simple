@@ -1,0 +1,47 @@
+# Multi-stage build for Spring Boot application
+FROM maven:3.9.6-eclipse-temurin-17 AS build
+
+WORKDIR /app
+
+# Copy pom.xml and download dependencies
+COPY pom.xml .
+RUN mvn dependency:go-offline -B
+
+# Copy source code and build
+COPY src ./src
+RUN mvn clean package -DskipTests
+
+# Runtime stage
+FROM eclipse-temurin:17-jre
+
+WORKDIR /app
+
+# Install curl for health check
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Copy the JAR file
+COPY --from=build /app/target/gagym-0.0.1-SNAPSHOT.jar app.jar
+
+# Copy application.properties (기존 설정 사용)
+COPY src/main/resources/application.properties /app/application.properties
+
+# Create application-prod.properties with only necessary overrides
+RUN echo "\
+spring.datasource.url=\${SPRING_DATASOURCE_URL}\n\
+spring.datasource.username=\${SPRING_DATASOURCE_USERNAME}\n\
+spring.datasource.password=\${SPRING_DATASOURCE_PASSWORD}\n\
+spring.security.oauth2.client.registration.google.redirect-uri=http://\${EC2_PUBLIC_IP}:8080/login/oauth2/code/{registrationId}\n\
+spring.security.oauth2.client.registration.kakao.redirect-uri=http://\${EC2_PUBLIC_IP}:8080/login/oauth2/code/kakao\n\
+spring.security.oauth2.client.registration.naver.redirect-uri=http://\${EC2_PUBLIC_IP}:8080/login/oauth2/code/naver\n\
+app.oauth2.redirect-uri=http://\${EC2_PUBLIC_IP}:8080/oauth2/redirect\n\
+app.oauth2.failure-redirect-uri=http://\${EC2_PUBLIC_IP}:8080/oauth2/failure\n\
+management.endpoints.web.exposure.include=health,info\n\
+management.endpoint.health.show-details=when_authorized" > /app/application-prod.properties
+
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+  CMD curl -f http://localhost:8080/actuator/health || exit 1
+
+ENTRYPOINT ["java", "-jar", "app.jar", "--spring.profiles.active=prod"]
